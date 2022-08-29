@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #262626;
+}
+
+body main{
+    width: 1200px;
+    margin: auto;
+}
+
+body main section{
+    min-height: 100vh;
+}
+
+body main section h1{
+    text-align: center;
+    color: whitesmoke;
+    margin: 32px;
+}
+
+body main section p{
+    color: white;
+}
+
+body main section form{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+body main section form input{
+    width: 95%;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    background-color: #262626;
+    border-style: solid;
+    border-color: #ff6200;
+    border-width: 2px;
+    border-radius: 4px;
+    padding: 4px;
+    color: #d2d2d2;
+    height: 48px;
+}
+
+body main section form input:focus{
+    border-color: #ff8a41;
+    border-width:2px;
+    outline: 0 none;
+}
+
+body main section form button{
+    background-color: #ff6200;
+    height: 48px;
+    padding:8px;
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 32px;
+    outline: 0 none;
+    border-color: #ff6200;
+    border-radius: 8px;
+    color: white;
+}
+
+body main section form button:hover{
+    cursor: pointer;
+}
+
+body main section form label{
+    color: white;
+    font-weight: bold;
+    width: inherit;
+    margin: 4px;
+}
+
+header{
+    width: 100%;
+    height: 64px;
+    background-color: rebeccapurple;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    width: inherit;
+    height: inherit;
+}
+
+header nav ol{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    text-decoration: none;
+}
+
+header nav ol li{
+    padding: 8px;
+}
+
+header nav ol li:hover{
+    padding: 8px;
+}
+
+header nav ol li a:hover{
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
+header nav ol li a{
+    color: whitesmoke;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    top: 14px;
+}
+
+header nav ol #logo{
+    background-color: #ff6200;
+    margin-right: 32px;
+
+}
+
+header nav ol #logo a{
+    font-size: 2rem;
+    top: 0;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flex div{
+    width: calc(50% - 64px);
+    margin: 32px;
+}
+
+#login-general-error{
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    width: 100%;
+    display: none;
+}
+
+#register-general-error{
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    width: 100%;
+    display: none;
+    padding: 4px;
+    margin-bottom: 4px;
+    margin-top: -4px;
+}
+
+#task-container{
+    width: 25%;
+    height: 400px;
+    overflow-y: scroll;
+}
+#task-container .task{
+    background-color: #1e1e1e;
+    margin: 8px;
+    padding: 8px;
+    width: 256px;
+    border-color: #1e1e1e;
+    height: 128px;
+    overflow: scroll;
+    border-radius: 5px;
+}
+
+#task-container .task:hover{
+    background-color: #2d2d2d;
+    cursor: pointer;
+}
+
+#task-container .task img{
+    width: 64px;
+    margin: auto;
+}
+
+#task-container .task h3{
+    font-weight: bold;
+    color: rebeccapurple;
+    padding: 4px;
+    margin-bottom: 4px;
+    text-align: left;
+}
+
+#task-container .task .task-closes-date{
+    padding-top: 8px;
+    margin-top: 8px;
+    text-align: left;
+}
+
+.open{
+    border-left: 8px solid #2ad32a!important;
+}
+
+.closed{
+    border-left: 8px solid red!important;
+}
+
+.divider{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border-top: 2px solid #cecece !important;
+}
+
+.alert{
+    width: 50%;
+    text-align: center;
+    background-color:  #ff6200;
+    color:white;
+    margin: auto;
+    padding: 8px;
+}
